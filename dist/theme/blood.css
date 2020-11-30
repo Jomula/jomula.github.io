@@ -10,6 +10,7 @@
  *
  */
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:100,300,700,300italic,700italic);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -18,7 +19,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 :root {
   --background-color: #222;
-  --main-font: Ubuntu, sans-serif;
+  --main-font: Noto Sans, sans-serif;
   --main-font-size: 40px;
   --main-color: #eee;
   --block-margin: 20px;
@@ -46,7 +47,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   background-color: #222; }
 
 .reveal {
-  font-family: Ubuntu, "sans-serif";
+  font-family: "Noto Sans", "sans-serif";
   font-size: 40px;
   font-weight: normal;
   color: #eee; }
