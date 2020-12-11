@@ -30,7 +30,18 @@
             .slides {
                 width: 100% !important;
             }
+            .reveal .controls {
+                visibility: hidden;
+            }
+            .notes .reveal .controls {
+                visibility: visible;
+            }
 		</style>
+        <script>
+            if (window.self !== window.top) {
+                document.body.className += " notes";
+            }
+        </script>
 	</head>
 	<body>
 		<div class="reveal">
