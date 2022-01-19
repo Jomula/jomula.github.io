@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/blood.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +16,133 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3>Arabic Vernacular Poetry</h3>
+					<h5>Challenges in Working with Arabic Script, Speech and (Re)Presentation</h5>
+				</section>
+				<section>
+					<h3>Research Data</h3>
+					<p>Arabic vernacular poetry, created by nomadic and semi-nomadic internees during and after their internment in Italian concentration camps in <i style="font-style: italic">Libia Coloniale</i> in the late 1920s and early 1930s.</p>
+				</section>
+				<section>
+					<h3>Research Project</h3>
+					<p>Read the poems - that were yet only addressed as reports on what happened in the concentration camps - as subjective voices of internees.</p>
+					<p>Address how they dealt with their being in a traumatizing environment in the context of Arabic poetry traditions.</p>
+				</section>
+				<section>
+					<h3>Sources and Problems</h3>
+					<section>
+						<ul>
+							<li>Original mode unknown, presumably oral in most cases.</li>
+							<li>Collected as part of a national narrative-building process in the <i style="font-style: italic">Ǧamāhirīya</i>.</li>
+							<li>Transcribed in non-vocalized Arabic Script.</li>
+							<li>Available only in parts (published volumes, scans of handwritten scripts).</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Civil War</li>
+							<li>No digital copies or openAccess archives.</li>
+							<li>Catastrophic editing quality.</li>
+							<li>Not much interest in the topic in Libya (besides a handful of scholars with strong opinions).</li>
+							<li>Lack of knowledge for the language, even with Libyan native speakers (with strong opinions).</li>
+							<li>No background information available for most poets.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>It's A Puzzle!</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>I used TEI because of ...</h3>
+						<ul>
+							<li>... it being a well documented and extensive standard.</li>
+							<li>... its interoperability.</li>
+							<li>... XML can be simply stored as files or ingested in an XML-database without transformation or querying.</li>
+							<li>... the option to embed CMIF to the header of some of the poems that were sent as letters.</li>
+							<li>... ... well, I like it.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>... BUT ...</h3>
+						<ul>
+							<li>... RTL-Script is pain in an LTR-environment.</li>
+							<li>... No dedicated support for (oral or semi-oral) Arabic in general.</li>
+							<li>... Thus, no dedicated support for the specifics of my sources either.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h3>How to deal with it?</h3>
+					<p>Three TEI-XML files for each poem:</p>
+					<ul>
+							<li>One for the Arabic original.</li>
+							<li>One for the translation (used for encoding rhetorics).</li>
+							<li>One for the transcription (used for language-specific encoding). <span style="color: red">[skipped]</span></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Issues</h3>
+					<section>
+						<h5>Technical Issues</h5>
+						<ul>
+							<li>No proper RTL/LTR-support in openSource-IDEs.</li>
+							<li>RTL in an XML-LTR environment.</li>
+						</ul>
+					</section>
+					<section>
+						<h5>Language-related Issues</h5>
+						<ul>
+							<li>Pronounciation and thus information on oral performativity is not represented in Arabic Script (Abjad).</li>
+							<li>No recordings were available, transcription is in part uncertain (because of it being a rural dialect that is not spoken anymore).</li>
+							<li>Probable loss of information during the poems long transmission from origin to XML-encoded translation.</li>
+						</ul>
+					</section>
+					<section>
+						<h5>And what is that with epistemic violence?</h5>
+						<p>Despite me (white, European, no native speaker of Arabic) working on a dataset of bad quality in a field that is mostly unknown yet highly disputed, challenging the way, in which this poetry was addressed in Libyan nationalist narratives (and still is by this handful of scholars)?</p>
+					</section>
+					<section>
+						<ul>
+							<li>Loss of information (availability of sources, transmission, abjad, transcription, translation, limited language skills) may lead to false presumptions, interpretations and thus false ideas of representability.</li>
+							<li>No proper support in IDEs requires LS-based workarounds or a strong will to suffer.</li>
+							<li>Arabic Script remains marginalized in digital humanities, even more so dialectal representations.</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>&laquo;WAIT! Hold on!&raquo; you may say.</h3>
+					</section>
+					<section>
+						<h5>Why not use solutions like <i>OpenITI mARkdown</i>?</h5>
+						<p>
+							<small>Despite it being developed mainly for &laquo;tagging structural, morphological and semantic elements in premodern and early modern Islamicate texts&raquo; and not modern vernacular poetry?</small>
+						</p>
+						<ul>
+							<li>I find it much less intuitive and readable than XML.</li>
+							<li>Lack of Stack-related community.</li>
+							<li>It &laquo;is not meant to be a comprehensive standard&raquo;.</li>
+						</ul>
+					</section>
+					<section>
+						<h5>Why not use Gedit with its better RTL-support?</h5>
+						<p>Well, it's an OS- and WindowManager-specific text editor with coding support, not a Fullstack-IDE. It doesn't really work on MacOS, at least not reliably. If we require data to be interoperable, so should be the IDE in terms of OS.</p>
+					</section>
+				</section>
+				<section>
+					<h3>Where to go from here?</h3>
+					<ul>
+						<li>Are there better pragmatic approaches for a case like mine?</li>
+						<li>How to improve NLS-support in XML (or other markup languages)? Would a TEI-SIG for NLS be an option to raise awareness?</li>
+						<li>How to deal with stack- and infrastructure-related issues of epistemic violence?</li>
+						<li>How to deal with the IDE situation?</li>
+					</ul>
+				</section>
+				<section>
+					Thank you.
+				</section>
 			</div>
 		</div>
 
