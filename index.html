@@ -36,17 +36,18 @@
 							<li>Original mode unknown, presumably oral in most cases.</li>
 							<li>Collected as part of a national narrative-building process in the <i style="font-style: italic">Ǧamāhirīya</i>.</li>
 							<li>Transcribed in non-vocalized Arabic Script.</li>
-							<li>Available only in parts (published volumes, scans of handwritten scripts).</li>
+							<li>Only parts of the material published but bad editing quality.</li>
+							<li>No digital copies or openAccess archives.</li>
 						</ul>
 					</section>
 					<section>
+						<h5 style="background-color: #851800">Arabic Script ...</h5>
 						<ul>
-							<li>Civil War</li>
-							<li>No digital copies or openAccess archives.</li>
-							<li>Catastrophic editing quality.</li>
-							<li>Not much interest in the topic in Libya (besides a handful of scholars with strong opinions).</li>
-							<li>Lack of knowledge for the language, even with Libyan native speakers (with strong opinions).</li>
-							<li>No background information available for most poets.</li>
+							<li>... is an impure <i>Abjad</i>, with long vowel signs and only optional vowel diacritics.</li>
+							<li>... is written from right to left.</li>
+							<li>... consists of letters with mostly contextual letterforms.</li>
+							<li>... is a highly inflected language.</li>
+							<li>... can be transcribed in Latin Script, but transcription systems differ depending on the language.</li>
 						</ul>
 					</section>
 				</section>
@@ -88,28 +89,50 @@
 							<li>No proper RTL/LTR-support in openSource-IDEs.</li>
 							<li>RTL in an XML-LTR environment.</li>
 						</ul>
+						<p>&rArr; Complex encoding renders text almost illegible for humans and makes it extremely prone to encoding-errors.</p>
 					</section>
 					<section>
 						<h5 style="background-color: #851800">Language-related Issues</h5>
 						<ul>
 							<li>Pronounciation and thus information on oral performativity is not represented in Arabic Script (Abjad).</li>
-							<li>No recordings were available, transcription is in part uncertain (because of it being a rural dialect that is not spoken anymore).</li>
-							<li>Probable loss of information during the poems long transmission from origin to XML-encoded translation.</li>
+							<li>Loss of information due to the poems long transmission.</li>
 						</ul>
 					</section>
 					<section>
 						<h5 style="background-color: #851800">And what about epistemic violence?</h5>
-						<p>Despite me (white, European, no native speaker of Arabic) working on a dataset of bad quality in a field that is mostly unknown yet highly disputed, challenging the way, in which this poetry was addressed in Libyan nationalist narratives (and still is by this handful of scholars)?</p>
+						<small>Despite me (white, European, no native speaker of Arabic) working on a dataset of bad quality in a field that is mostly unknown yet highly disputed, challenging the way, in which this poetry was addressed in Libyan nationalist narratives (and still is by this handful of scholars), using Latin-Script-based IDEs and markup languages and in general Latin-Script-based infrastructure that fails to address the specifics of Arabic?</small>
 					</section>
 					<section>
 						<ul>
+							<li>Transcription as a workaround is problematic because of its &laquo;<span style="font-style: italic">scriptual coloniality</span>&raquo; and its ambiguity.</li>
 							<li>Loss of information (availability of sources, transmission, abjad, transcription, translation, limited language skills) may lead to false presumptions, interpretations and thus false ideas of representability.</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
 							<li>No proper support in IDEs requires LS-based workarounds or a strong will to suffer.</li>
 							<li>Arabic Script remains marginalized in digital humanities, even more so dialectal representations.</li>
 						</ul>
 					</section>
 				</section>
 				<section>
+					<section>
+						<h5 style="background-color: #851800">&laquo;Why not use solutions like <i>OpenITI mARkdown</i>?&raquo;</h5>
+						<p>
+							<small>Despite it being developed mainly for &laquo;tagging structural, morphological and semantic elements in premodern and early modern Islamicate texts&raquo; and not modern vernacular poetry?</small>
+						</p>
+						<ul>
+							<li>I find it much less intuitive and readable than XML.</li>
+							<li>Lack of Stack-related community.</li>
+							<li>It &laquo;is not meant to be a comprehensive standard&raquo;.</li>
+							<li>It is yet another Latin-Script-based workaround solution.</li>
+						</ul>
+					</section>
+					<section>
+						<h5 style="background-color: #851800">&laquo;Why not use Gedit with its better RTL-support?&raquo;</h5>
+						<p>It is an OperatingSystem- and WindowManager-specific text editor with coding support, not a Fullstack-IDE. It doesn't really work on MacOS, at least not reliably. If we require data to be interoperable, so should be the IDE in terms of OS.</p>
+					</section>
+					<!--
 					<section>
 						<h5 style="background-color: #851800">Why not use solutions like <i>OpenITI mARkdown</i>?</h5>
 						<p>
@@ -125,12 +148,13 @@
 						<h5 style="background-color: #851800">Why not use Gedit with its better RTL-support?</h5>
 						<p>Well, it's an OS- and WindowManager-specific text editor with coding support, not a Fullstack-IDE. It doesn't really work on MacOS, at least not reliably. If we require data to be interoperable, so should be the IDE in terms of OS.</p>
 					</section>
+					-->
 				</section>
 				<section>
 					<h3 style="background-color: #851800">Where to go from here?</h3>
 					<ul>
 						<li>Are there better pragmatic approaches for a case like mine?</li>
-						<li>How to improve NLS-support in XML (or other markup languages)? Would a TEI-SIG for (MENA-)NLS be an option to raise awareness?</li>
+						<li>How to improve NLS-support in XML (or other markup languages)? Would a TEI-SIG for (SWANA-)NLS be an option to improve the situation?</li>
 						<li>How to deal with stack- and infrastructure-related issues of epistemic violence?</li>
 						<li>How to deal with the IDE situation?</li>
 					</ul>
@@ -138,11 +162,11 @@
 				<section>
 					<h3 style="background-color: #851800">Thank you.</h3>
 					<small>
-					<p>New projects at Freie Universität Berlin to deal with Multilingual-DH-related topics:</p>
+					<p>New projects at Freie Universität Berlin to deal with Multilingual-DH-related topics in 2021/2022:</p>
 					<ul>
 						<li>Closing the Gap in Non-Latin Script Data (github: Closing-the-Gap-in-NLS-DH).</li>
 						<li>Multilingual DH-Lab @Ada Lovelace Center for Digital Humanities (website tba).</li>
-						<li>DHd-AG &laquo;Multilingual DH&raquo; to be founded very soon.</li>
+						<li>DHd-Working Group &laquo;Multilingual DH&raquo; to be founded very soon.</li>
 					</ul>
 				</small>
 				</section>
