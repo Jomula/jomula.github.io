@@ -8,30 +8,37 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/blood.css">
+		<link rel="stylesheet" href="dist/theme/robot-lung.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h3 style="background-color: #851800">Arabic Vernacular Poetry</h3>
-					<h5>Challenges in Working with Arabic Script, Speech and (Re)Presentation</h5>
+					<h2>Arabic Vernacular Poetry</h2>
+					<h4>Challenges in Working with Arabic Script, Speech and (Re)Presentation</h4>
 				</section>
 				<section>
-					<h3 style="background-color: #851800">Research Data</h3>
+					<h3>Research Data</h3>
 					<p>Arabic vernacular poetry, created by nomadic and semi-nomadic internees during and after their internment in Italian concentration camps in <i style="font-style: italic">Libia Coloniale</i> in the late 1920s and early 1930s.</p>
 				</section>
 				<section>
-					<h3 style="background-color: #851800">Research Project</h3>
+					<h3>Research Project</h3>
 					<p>Read the poems - that were yet only addressed as reports on what happened in the concentration camps - as subjective voices of internees.</p>
 					<p>Address how they dealt with their being in a traumatizing environment in the context of Arabic poetry traditions.</p>
 				</section>
 				<section>
-					<h3 style="background-color: #851800">Sources and Problems</h3>
 					<section>
+						<h3>Sources and Language</h3>
+					</section>
+					<section>
+						<h3>Sources</h3>
 						<ul>
 							<li>Original mode unknown, presumably oral in most cases.</li>
 							<li>Collected as part of a national narrative-building process in the <i style="font-style: italic">Ǧamāhirīya</i>.</li>
@@ -41,7 +48,7 @@
 						</ul>
 					</section>
 					<section>
-						<h5 style="background-color: #851800">Arabic Script ...</h5>
+						<h3>Arabic Script ...</h3>
 						<ul>
 							<li>... is an impure <i>Abjad</i>, with long vowel signs and only optional vowel diacritics.</li>
 							<li>... is written from right to left.</li>
@@ -53,7 +60,7 @@
 				</section>
 				<section>
 					<section>
-						<h3 style="background-color: #851800">I used TEI because ...</h3>
+						<h3>I used TEI because ...</h3>
 						<ul>
 							<li>... it is a well documented and extensive standard.</li>
 							<li>... is highly interoperable.</li>
@@ -63,7 +70,7 @@
 						</ul>
 					</section>
 					<section>
-						<h3 style="background-color: #851800">... BUT ...</h3>
+						<h3>... BUT ...</h3>
 						<ul>
 							<li>... RTL-Script is pain in an LTR-environment.</li>
 							<li>... No dedicated support for (oral or semi-oral) Arabic in general.</li>
@@ -73,38 +80,41 @@
 					</section>
 				</section>
 				<section>
-					<h3 style="background-color: #851800">How to deal with it?</h3>
+					<h3>How to deal with it?</h3>
 					<p>Three TEI-XML files for each poem:</p>
 					<ul>
 							<li>One for the Arabic original.</li>
 							<li>One for the translation (used for encoding rhetorics).</li>
-							<li><span style="text-decoration:line-through">One for the transcription (used for language-specific encoding).</span> <span style="color: #851800">[skipped]</span></li>
+							<li><span style="text-decoration:line-through">One for the transcription (used for language-specific encoding).</span> <span style="color: #FF4081">[skipped]</span></li>
 					</ul>
 				</section>
 				<section>
-					<h3 style="background-color: #851800">Issues</h3>
 					<section>
-						<h5 style="background-color: #851800">Technical Issues</h5>
+						<h3>Issues</h3>
+					</section>
+					<section>
+						<h3>Technical Issues</h3>
 						<ul>
 							<li>No proper RTL/LTR-support in openSource-IDEs.</li>
 							<li>RTL in an XML-LTR environment.</li>
 						</ul>
-						<p>&rArr; Complex encoding renders text almost illegible for humans and makes it extremely prone to encoding-errors.</p>
+						<p>&rArr; Complex encoding (e.g. of the morphology...) renders text almost illegible for humans and makes it extremely prone to encoding-errors.</p>
 					</section>
 					<section>
-						<h5 style="background-color: #851800">Language-related Issues</h5>
+						<h3>Language-related Issues</h3>
 						<ul>
 							<li>Pronounciation and thus information on oral performativity is not represented in Arabic Script (Abjad).</li>
+							<li>Bad editing quality (without any editing guidelines) makes it even worse.</li>
 							<li>Loss of information due to the poems long transmission.</li>
 						</ul>
 					</section>
 					<section>
-						<h5 style="background-color: #851800">And what about epistemic violence?</h5>
-						<small>Despite me (white, European, no native speaker of Arabic) working on a dataset of bad quality in a field that is mostly unknown yet highly disputed, challenging the way, in which this poetry was addressed in Libyan nationalist narratives (and still is by some scholars), using Latin-Script-based IDEs and markup languages and in general Latin-Script-based infrastructure that fails to address the specifics of Arabic?</small>
+						<h3>And what about epistemic violence?</h3>
+						<p>Despite me (white, European, no native speaker of Arabic) working on a dataset of bad quality in a field that is mostly unknown yet highly disputed, challenging the way, in which this poetry was addressed in Libyan nationalist narratives (and still is by some scholars), using Latin-Script-based IDEs and markup languages and in general Latin-Script-based infrastructure that fails to address the specifics of Arabic?</p>
 					</section>
 					<section>
 						<ul>
-							<li>Transcription (and translation!) as a workaround is problematic because of its &laquo;<span style="font-style: italic">scriptual coloniality</span>&raquo; and its ambiguity.</li>
+							<li>Transcription (and translation!) as a workaround is problematic because of its &laquo;<span style="font-style: italic">scriptual coloniality</span>&raquo; and the ambiguity of the Arabic text, itself being a transcript of oral sources.</li>
 							<li>Loss of information (availability of sources, transmission, abjad, transcription, translation, limited language skills) may lead to false presumptions, interpretations and thus misconceptions of representability.</li>
 						</ul>
 					</section>
@@ -117,7 +127,7 @@
 				</section>
 				<section>
 					<section>
-						<h5 style="background-color: #851800">&laquo;Why not use solutions like <i>OpenITI mARkdown</i>?&raquo;</h5>
+						<h3>&laquo;Why not use solutions like <i>OpenITI mARkdown</i>?&raquo;</h3>
 						<p>
 							<small>Despite it being developed mainly for &laquo;tagging structural, morphological and semantic elements in premodern and early modern Islamicate texts&raquo; and not modern vernacular poetry?</small>
 						</p>
@@ -129,12 +139,12 @@
 						</ul>
 					</section>
 					<section>
-						<h5 style="background-color: #851800">&laquo;Why not use Gedit with its better RTL-support?&raquo;</h5>
+						<h3>&laquo;Why not use Gedit with its better RTL-support?&raquo;</h3>
 						<p>It is an OperatingSystem- and WindowManager-specific text editor with coding support, not a Fullstack-IDE. It doesn't really work on MacOS, at least not reliably. If we require data to be interoperable, so should be the IDE in terms of OS.</p>
 					</section>
 					<!--
 					<section>
-						<h5 style="background-color: #851800">Why not use solutions like <i>OpenITI mARkdown</i>?</h5>
+						<h3 style="background-color: #851800">Why not use solutions like <i>OpenITI mARkdown</i>?</h3>
 						<p>
 							<small>Despite it being developed mainly for &laquo;tagging structural, morphological and semantic elements in premodern and early modern Islamicate texts&raquo; and not modern vernacular poetry?</small>
 						</p>
@@ -145,13 +155,13 @@
 						</ul>
 					</section>
 					<section>
-						<h5 style="background-color: #851800">Why not use Gedit with its better RTL-support?</h5>
+						<h3 style="background-color: #851800">Why not use Gedit with its better RTL-support?</h3>
 						<p>Well, it's an OS- and WindowManager-specific text editor with coding support, not a Fullstack-IDE. It doesn't really work on MacOS, at least not reliably. If we require data to be interoperable, so should be the IDE in terms of OS.</p>
 					</section>
 					-->
 				</section>
 				<section>
-					<h3 style="background-color: #851800">Where to go from here?</h3>
+					<h3>Where to go from here?</h3>
 					<ul>
 						<li>Are there better pragmatic approaches for a case like mine?</li>
 						<li>How to improve NLS-support in XML (or other markup languages)? Would a TEI-SIG for (SWANA-)NLS be an option to improve the situation?</li>
@@ -160,7 +170,7 @@
 					</ul>
 				</section>
 				<section>
-					<h3 style="background-color: #851800">Thank you.</h3>
+					<h3 style="background-color: #FF4081">Thank you.</h3>
 					<small>
 					<p>New projects at Freie Universität Berlin to deal with Multilingual-DH-related topics in 2021/2022:</p>
 					<ul>
