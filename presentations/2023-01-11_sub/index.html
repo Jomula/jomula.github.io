@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Digital Humanities</title>
+
+		<link rel="stylesheet" href="../../dist/reset.css">
+		<link rel="stylesheet" href="../../dist/reveal.css">
+		<link rel="stylesheet" href="../../dist/theme/blood.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../../plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Digital Humanities</h1>
+					<h2>Was ist das? Was macht das? Was kann das?</h2>
+				</section>
+				<section>
+					<h3>Digital Humanities (DH) - Was ist das?</h3>
+					<p>Tja...</p>
+				</section>
+				<section data-background-iframe="https://whatisdigitalhumanities.com/"
+						data-background-interactive>
+				</section>
+				<section>
+					<h3>Machen wir es kurz:</h3>
+					<p>Geisteswissenschaft mit digitalen Methoden.</p>
+					<p style="font-size: 0.4em">... oder?</p>
+					<aside class="notes">
+						- Doch halten wir uns hier nicht unnötig auf
+					</aside>
+				</section>
+				<section>
+					<h3>Was macht das?</h3>
+					<p>Gute Frage!</p>
+				</section>
+				<section>
+					<section>
+						<h3>Geschichte der DH</h3>
+					</section>
+					<section>
+						<h4>1946: Index Thomisticus</h4>
+						<img src="index-thomisticus.jpg" />
+						<aside class="notes" data-markdown>
+							- Leitung: Jesuit Roberto Busa
+							- Erstellung einer Konkordanz zum Werk und Umfeld Thomas von Aquins
+							- Gesponsort von IBM
+							- Methode: Text wurde auf Lochkarten gedruckt und dadurch maschinell verwertbar
+							- Wegweisend für die moderne Korpus- und grundlegend für die Computerlinguistik
+						</aside>
+					</section>
+					<section>
+						<h4>1940-1964: Federalist Papers</h4>
+						<img src="federalist.jpg" style="height: 13em" />
+						<aside class="notes" data-markdown>
+							- Frederick Mosteller und David L. Wallace
+							- Federalist Papers = in einer New Yorker Zeitung erschienene Artikel zur Bewerbung der US-Verfassung
+							- Computergestützte Untersuchung des Stils
+							- Wegweisend für die computergestützte Stilometrie
+						</aside>
+					</section>
+					<section>
+						<h4>1962: Erste Fachkonferenz</h4>
+						<p>The Use of Computers in Anthropology.</p>
+					</section>
+					<section>
+						<h4>1964: Erste Fachzentren werden gegründet</h4>
+						<p>Linguistic Computing Centre in Cambridge.</p>
+					</section>
+					<section>
+						<h4>1966: Erstes Fachjournal</h4>
+						<p>Linguistic Computing Centre in Cambridge.</p>
+					</section>
+					<section>
+						<h4>Ab 1973: Fachgesellschaften gründen sich</h4>
+						<p>z.B. Association for Literary and Linguistic Computing, heute European Association for Digital Humanities (EADH).</p>
+						<aside class="notes" data-markdown>
+							- In den 60ern und 70ern setzten sich auch Programmiersprachen wie Assembler durch
+								- z.B. TU Step für die Umsetzung gedruckter Editionen auf Computern (gibt es immer noch)
+							- Statistische Anwendungssoftware machte statistische und analytische Verfahren einfacher
+						</aside>
+					</section>
+					<section>
+						<h4>1960<span style="text-transform: lowercase">er</span> und 70<span style="text-transform: lowercase">er</span></h4>
+						<p>Programmiersprachen und Anwendungssoftware setzen sich durch.</p>
+					</section>
+					<section>
+						<h4>1980<span style="text-transform: lowercase">er</span></h4>
+						<p>Etablierung moderner Datenbanksysteme.</p>
+						<p>Der PC setzt sich durch.</p>
+					</section>
+					<section>
+						<h4>1990<span style="text-transform: lowercase">er</span></h4>
+						<p>Das Internet als neue Möglichkeit des Datenaustausches und der Vernetzung.</p>
+						<p>Zunehmende Bedeutung von GLAM-Institutionen für digitale Wissensverwaltung.</p>
+					</section>
+					<section>
+						<h4>2004</h4>
+						<p>"Digital Humanities"<br />(Schreibman, Siemens und Unsworth 2004)</p>
+					</section>
+					<section>
+						<h4>Andere wichtige Entwicklungen</h4>
+						<ul>
+							<li>1994: Text Encoding Initiative (TEI)</li>
+							<li>1999: Music Encoding Initiative (MEI)</li>
+							<li>2002: Alliance of Digital Humanities Organizations (ADHO)</li>
+							<li>2013: Digital Humanities im deutschsprachigen Raum (DHd)</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Aber was macht das?</h3>
+					</section>
+					<section>
+						<h4>Zu Beginn</h4>
+						<p>Statistische und Analyseverfahren für geisteswissenschaftliche Fragestellungen, z.B. in Stilometrie und Korpuslinguistik.</p>
+					</section>
+					<section>
+						<h4>... das heißt?</h4>
+						<p>z.B. Lemmatisierung und Tokenisierung.</p>
+						<pre>Die Hunde spielten auf einer grünen Wiese.
+	=> Die | Hund | spielen | auf | eine | grün | Wiese
+</pre>
+						<aside class="notes" data-markdown>
+							- Untersuchung von Worthäufigkeiten (siehe Index Thomisticus)
+							- Textvergleiche
+						</aside>
+					</section>
+					<section>
+						<h4>Später dann</h4>
+						<p>Textauszeichnung (z.B. mit XML) zur maschinenlesbaren Beschreibung von Texten.</p>
+						<p>Entwicklung von digitalen oder hybriden Editionen.</p>
+					</section>
+					<section>
+						<h4>... das heißt?</h4>
+						<p>Um unser Beispiel von vorhin zu nehmen:</p>
+						<pre>
+							<code>Die
+	&lt;dog n="4" type="sighthound"&gt;Hunde&lt;/dog&gt;
+	spielten auf einer grünen
+	&lt;place coords="..."&gt;Wiese&lt;/place&gt;.
+</code>
+						</pre>
+						<aside class="notes" data-markdown>
+							- Untersuchung von Worthäufigkeiten (siehe Index Thomisticus)
+							- Textvergleiche
+						</aside>
+					</section>
+					<section>
+						<h4>Weitere typische Methoden</h4>
+						<ul>
+							<li>Netzwerkanalyse.</li>
+							<li>Bildanalyse.</li>
+							<li>Visualisierungen.</li>
+							<li>OCR und HTR (Bild-zu-Text-Erkennung)</li>
+							<li>Text- und Datamining</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Moment!</h4>
+						<p>Ist das nicht Computerlinguistik?</p>
+						<p class="fragment">Jein.</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../../dist/reveal.js"></script>
+		<script src="../../plugin/notes/notes.js"></script>
+		<script src="../../plugin/markdown/markdown.js"></script>
+		<script src="../../plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
