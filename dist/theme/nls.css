@@ -15,11 +15,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-background-color: #2e4a61;
   --r-main-font: 'Noto Sans', sans-serif;
   --r-main-font-size: 42px;
-  --r-main-color: #b8b08d;
+  --r-main-color: #f2d492;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
   --r-heading-font: 'Noto Sans', sans-serif;
-  --r-heading-color: #b8b08d;
+  --r-heading-color: #f2d492;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -31,7 +31,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   --r-heading3-size: 1.3em;
   --r-heading4-size: 1em;
   --r-code-font: monospace;
-  --r-link-color: #b8b08d;
+  --r-link-color: #f2d492;
   --r-link-color-dark: #202c39;
   --r-link-color-hover: #d66800;
   --r-selection-background-color: #bee4fd;
