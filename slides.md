@@ -83,7 +83,7 @@ Pragmatic methods to manage corpora with diverse languages
 layout: quote
 ---
 
-# Real Talk
+# <span v-mark="{ color: `#8b0000`, type: `circle`}">Real Talk</span>
 
 I would prefer academic infrastructure, but there is often no way or will to provide for a platform that is as accessible, easy to use and long-term supported as providers like GitHub. It is just not possible yet to realize a similar setup compared to ours in a conventional academic context (and in an appropriate timespan).
 
@@ -341,13 +341,13 @@ and soon probably:
 The CtG project provides a metadata corpus on projects working with non-latin scripts
 
 The infrastructure...
-- requires no conventional setup and sysadmin
+- requires <span v-mark.underline.red>no conventional setup and sysadmin</span>
 - is free of charge and accessible from (almost) everywhere
-- provides multiple methods to provide sustainable long-term archiving (github, web archive, zenodo)
+- provides multiple methods to provide <span v-mark.underline.red>sustainable long-term archiving (github, web archive, zenodo)</span>
 - provides human- and machine-readable data for further processing
 - provides insight in topics that are commonly ignored (e.g. the wide lack of sustainability plans)
 - provides an overview over different stacks, tools and methods in use
-- is independent from limited third party funding
+- is <span v-mark.underline.red>independent from limited third party funding</span>
 
 ... but ...
 - may be problematic with sensitive or complex data
