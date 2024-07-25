@@ -1,638 +1,379 @@
 ---
-# You can also start simply with 'default'
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
+title: Closing the Gap in Non-Latin Script Data
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 ---
 
-# Welcome to Slidev
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
----
-transition: fade-out
----
-
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
 <style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
+  strong {
+    color: #B31FB8;
+  }
 </style>
 
-<!--
-Here is another comment.
--->
+# Closing the Gap in Non-Latin Script Data
+
+Pragmatic methods to manage corpora with diverse languages
 
 ---
-transition: slide-up
-level: 2
----
 
-# Navigation
+# Aim of the project
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
-
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+- provide an overview over projects that work with non-latin script
+- provide insight into 
+  - tech stack
+  - tools
+  - policies
+  - contacts
+- provide a best practice example for corpus management
 
 ---
-layout: two-cols
-layoutClass: gap-16
+
+# Basic needs
+
+- no conventional setup required (no server-side infrastructure)
+- should survive longer than the usual third-party funding period
+- no "could I please have"-infrastructure
+- use established workflows and industry standards
+- **FAIR**
+- transparent
+- easy and nice frontend (initial phase: [**Vue.js**](https://vuejs.org/), now: [**SvelteKit**](https://kit.svelte.dev/))
+- as static as possible
+- clear separation between data and frontend
+- accessible from (almost) everywhere
+
 ---
 
-# Table of contents
+# Initial ideas
 
-You can use the `Toc` component to generate a table of contents for your slides:
+- established formats: `.json`, `.xml` or `.yaml`
+  - `.json` as the first choice for its widespread use and comparably easy use with non-latin Script
+- **GitHub** for repository and public issue management
+- **GitHub Pages** for frontend
+- implementing of taxonomies and existing standards
+- implementing [**CRediT**](https://credit.niso.org/)
+- CC-BY license
+- heavily committing to **Open Science**
+- every major decision should be documented transparently
+- "practice what we preach": provide an example to show it is actually possible to work **FAIR**.
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
+--- 
+
+# Why not GitHub?
+
+- owned by **Microsoft**, thus we use "Big Tech" solutions instead of local academic infrastructure
+- data is "out in the wild"
+  - this is an issue for sensitive data
+
+---
+
+# Why GitHub?
+
+- data is "out in the wild"
+- **GitHub** has a higher probability to be working even in 5 or 10 years
+- accessibility without academic credentials
+- **GitHub Actions** and **GitHub Pages**
+- future alternatives can be non-profit providers, e.g. [**Codeberg**](https://codeberg.org/)
+- project and issue management resources to allow collaboration
+
+---
+layout: quote
+---
+
+# Real Talk
+
+I would prefer academic infrastructure, but there is often no way or will to provide for a platform that is as accessible, easy to use and long-term supported as providers like GitHub. It is just not possible yet to realize a similar setup compared to ours in a conventional academic context (and in an appropriate timespan).
+
+
+---
+
+# Closing the Gap Database
+
+#### folder structure:
+```
+/PROJECTS/
+.. {simplified_project_name}/
+..  .. {uuid}.json
+/DOCS/
+/KEYWORDS/
+/SCHEMATA/
+...
+/projects.json
+
 ```
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+the `projects.json` contains a mapping of `{uuid}` to `{simplified_project_name}`, resulting in a:
+- human-readable folder structure
+- machine-readable UUID-mapping
+
+---
+
+# Closing the Gap Datamodel
+
+- versioned and [**Zod**](https://zod.dev/)-validated `json` schema
+- multiple sections:
+  - metadata on the `.json`-file
+  - metadata on the project
+  - metadata on the relations of the project
+- example: **AnonymClassic** (`d1e6d69b-5e9a-4b4a-85ad-09aac56ed2d9`)
+
+```json {*}{maxHeight: '200px'}
+{
+  "schema_version": "0.2.4",
+  "record_metadata": {
+    "uuid": "d1e6d69b-5e9a-4b4a-85ad-09aac56ed2d9",
+    "record_created_on": "2021-11-08",
+    "record_created_by": "Kudela, Xenia Monika",
+    "last_edited_on": "2022-02-18",
+    "interviewed": false
+  },
+  "project": {
+    "title": "Kalila and Dimna – AnonymClassic",
+    "abbr": "",
+    "type": "project",
+    "ref": [],
+    "date": [
+      {
+        "from": "2018-01-01",
+        "to": "2022-12-31"
+      }
+    ],
+    "maintained": null,
+    "websites": [
+      "https://www.geschkult.fu-berlin.de/en/e/kalila-wa-dimna/index.html",
+      "https://kalila-and-dimna.fu-berlin.de/"
+    ],
+    "project_desc": "AnonymClassic is the first ever comprehensive study of Kalila and Dimna, one of the most important text of premodern world literature which passed from Hinduism and Buddhism via Islam to Christianity. Its Arabic versions constitute a source of all further translations into European languages and are also the main focus of the project, which analyzes the transmission processes of the work from India to Europe with Arabic as cultural bridge.",
+    "places": [
+      {
+        "place_name": {
+          "text": "Berlin",
+          "ref": [
+            "https://www.geonames.org/2950159/berlin.html"
+          ]
+        },
+        "coordinates": {
+          "lat": "52.52437",
+          "lng": "13.41053"
+        }
+      }
+    ],
+    "lang": [
+      "deu",
+      "eng"
+    ],
+    "related_institutions": [
+      {
+        "relation_type": "host",
+        "org_name": {
+          "text": "Freie Universität Berlin",
+          "ref": [
+            "https://ror.org/046ak2485",
+            "https://www.wikidata.org/wiki/Q153006"
+          ]
+        },
+        "websites": [
+          "https://www.fu-berlin.de/"
+        ]
+      }
+    ],
+    "related_entities": [
+      {
+        "relation_type": "sibling",
+        "title": "Verse und Sprueche: Impulse und Reichweiten wissenschaftlicher und popularisierender Diskurse im arabischen Sprachraum",
+        "uuid": "a2984fec-9396-488e-ad56-d3d21dc49052"
+      },
+      {
+        "relation_type": "sibling",
+        "title": "Country of Words: Reading and Reception of Palestinian Literature from 1948 to the Present",
+        "uuid": "2adf7ddc-9dd5-49b3-842c-9dc48dbbf36e"
+      },
+      {
+        "relation_type": "sibling",
+        "title": "Keywords for the Study of the Arabic Literary and Manuscript Tradition",
+        "uuid": "7050ac6d-523c-4ba0-b381-48ec200ff6c4"
+      },
+      {
+        "relation_type": "cooperation",
+        "title": "Arabic Literature Cosmopolitan",
+        "uuid": "46aff246-b6ef-4632-90c2-0993a9f9b1f5"
+      },
+      {
+        "relation_type": "sibling",
+        "title": "Memory Spaces: Mapping Oral History in Mosul",
+        "uuid": "aec92ee9-7c8a-49ce-8491-46667fc75505"
+      }
+    ],
+    "contacts": [
+      {
+        "pers_name": {
+          "text": "Gruendler, Beatrice",
+          "ref": [
+            "https://d-nb.info/gnd/111749344X"
+          ]
+        },
+        "roles": [
+          "supervision"
+        ],
+        "websites": [
+          "https://www.geschkult.fu-berlin.de/e/semiarab/arabistik/Seminar/Mitarbeiterinnen-und-Mitarbeiter/Professuren/Gruendler/"
+        ]
+      }
+    ],
+    "research_data": {
+      "lang": [
+        "ara",
+        "fas"
+      ],
+      "sustainability_plan": null,
+      "publications": {
+        "open_access": 0,
+        "licensing": [
+          ""
+        ]
+      },
+      "data": {
+        "datatypes": [],
+        "repositories": []
+      }
+    },
+    "stack": {
+      "database": [
+        "sql",
+        "xml",
+        "json",
+        "nosql"
+      ],
+      "backend": [
+        "laravel"
+      ],
+      "frontend": [
+        "vue"
+      ],
+      "tools": [],
+      "languages": [
+        "php",
+        "javascript",
+        "python"
+      ]
+    },
+    "policies": [
+      {
+        "description": "",
+        "ref": []
+      }
+    ],
+    "keywords": [
+      "arabic_studies",
+      "classical_text",
+      "digital_edition",
+      "digital_preservation",
+      "literary_studies",
+      "manuscript",
+      "translation",
+      "vre"
+    ],
+    "category": "digital_preservation",
+    "comment": ""
+  }
+}
+
+```
+
+---
+
+# Additional workflows:
+
+- regular releases on [**GitHub**](https://github.com/M-L-D-H/Closing-The-Gap-In-Non-Latin-Script-Data/releases) and [**Zenodo**](https://zenodo.org/records/12579502) of the complete project (DOI: `https://zenodo.org/doi/10.5281/zenodo.8329145`)
+- monthly snapshots of the frontend in the [**Web Archive**](https://web.archive.org/web/20240000000000*/https://m-l-d-h.github.io/Closing-The-Gap-In-Non-Latin-Script-Data/) (`https://web.archive.org/web/20240000000000*/https://m-l-d-h.github.io/Closing-The-Gap-In-Non-Latin-Script-Data/`)
+- regular link-checks via **Lychee**
+
+---
+
+# Additional services
+
+- link-checking helps to track dying project websites or unstable links
+- support in networking and flat corpus management
+- data analysis for academic politics
+
+<img border="rounded" src="/ctg_vis1.png" alt="" style="height:350px; float: left; margin-right: 10px; margin-top: 10px;">
+<img border="rounded" src="/ctg_vis2.png" alt="" style="height:350px; float: left; margin-top: 10px;">
+
+---
+
+# Issue 1: Taxonomies
+
+- implementation of taxonomies for descriptive keywords (e.g. [**DHA**](https://vocabs.acdh.oeaw.ac.at/dha_taxonomy/en/))
+- [**ISO 639-3**](https://iso639-3.sil.org/code_tables/639/data) codes for languages
+
+BUT: non-latin script related concepts may not be supported by existing taxonomies (e.g. "arabic_studies").
+
+workaround: mapping a *short* self-developed taxonomy to established taxonomies.
+
+<img border="rounded" src="/ctg_disciplines.png" alt="" style="height:200px">
+
+---
+
+# Issue 2: Data acquisition
+How to get comprehensive data?
+
+as so often: the project requires people to provide data, but people are not always willing to do so:
+
+>"we have better things to do"
+>
+>"this is OUR data"
+>
+>"someone may steal the data"
+>
+>"I'd rather use google"
+
+and soon probably:
+
+> "what about chatGPT and artificial intelligence?"
+
+---
+
+# Conclusion
+
+The CtG project provides a metadata corpus on projects working with non-latin scripts
+
+The infrastructure...
+- requires no conventional setup and sysadmin
+- is free of charge and accessible from (almost) everywhere
+- provides multiple methods to provide sustainable long-term archiving (github, web archive, zenodo)
+- provides human- and machine-readable data for further processing
+- provides insight in topics that are commonly ignored (e.g. the wide lack of sustainability plans)
+- provides an overview over different stacks, tools and methods in use
+- is independent from limited third party funding
+
+... but ...
+- may be problematic with sensitive or complex data
+- requires services like github actions and github pages to stay alive to be fully functional
+- requires a certain amount of tech affinity to allow for collaboration without further assistance
+
+--- 
+layout: two-cols-header
+---
+
+# Last Slide
+
+Thank you for your attention. Questions?
+
+::left::
+
+## backend
+
+<img border="rounded" src="/ctg_github.png" alt="" style="height:200px;margin-top: 10px;">
 
 ::right::
 
-<Toc v-click minDepth="1" maxDepth="2"></Toc>
+## frontend
 
----
-layout: image-right
-image: https://cover.sli.dev
----
+<img border="rounded" src="/ctg_frontend.png" alt="" style="height:200px;margin-top: 10px;">
 
-# Code
 
-Use code snippets and get the highlighting directly, and even types hover![^1]
 
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
 
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-[^1]: [Learn More](https://sli.dev/guide/line-highlighting)
-
-<!-- Inline style -->
-<style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
-
----
-level: 2
----
-
-# Shiki Magic Move
-
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
-
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
-
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
----
-class: px-20
----
-
-# Themes
-
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
-
-<div grid="~ cols-2 gap-2" m="t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn More](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn More: [Mermaid Diagrams](https://sli.dev/guide/features/mermaid) and [PlantUML Diagrams](https://sli.dev/guide/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <carbon:arrow-up />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
-
-<PoweredBySlidev mt-10 />
