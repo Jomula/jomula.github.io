@@ -16,7 +16,7 @@ mdc: true
 
 # KI Kolloquium
 
-Entwicklung von <span v-mark.circle.red>AI Literacy</span>
+Entwicklung von <span v-mark.circle.pink>AI Literacy</span>
 
 ---
 
@@ -68,11 +68,16 @@ Generell gilt: Je größer und diverser ein Datensatz ist, desto wahrscheinliche
 Man nennt dieses System auch ein <span v-mark.circle.pink>künstliches neuronales Netz</span>.
 
 ---
-layout: image-left
-image: /neuronalesnetz.svg
+layout: two-cols-header
 ---
 
 # Künstliche Neuronale Netze
+
+::left::
+
+<img src="./neuronalesnetz.svg" style="width: 350px;background-color: #fff; padding: 20px; border-radius: 5px;" />
+
+::right::
 
 1. Daten werden eingegeben
 2. Beliebig viele "versteckte" Schichten gewichten immer neu die Ergebnisse der vorhergehenden Knoten
@@ -113,9 +118,6 @@ Das heißt, dass das Model/die Maschine nur auf der Basis dessen Vorhersagen tre
 
 ... zuviele für eine gemeinsame Folie.
 
----
-layout: image-left
-image: /ai-experts.png
 ---
 
 # Nachteile
@@ -165,10 +167,18 @@ UND: GKI stellt trotz AI Act gerade Institutionen wie Bibliotheken vor enorme He
 - Enormes Ungleichgewicht zwischen technischen Möglichkeiten und rechtlichen/ethischen Risiken bei GKI
 
 ---
+layout: two-cols-header
+---
 
 # Sie sehen: Es ist kompliziert.
 
 Deshalb gibt es jetzt:
+
+::left:: 
+
+<img src="./ai-experts.png" style="width: 300px;">
+
+::right::
 
 ## <span v-mark.circle.pink>Das KI-LKolloquium</span> ...
 
