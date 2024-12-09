@@ -67,5 +67,16 @@ Generell gilt: Je größer und diverser ein Datensatz ist, desto wahrscheinliche
 Man nennt dieses System auch ein <span v-mark.circle.pink>künstliches neuronales Netz</span>.
 
 ---
+layout: image-left
+image: /neuronalesnetz.svg
+---
 
-#
+# Künstliche Neuronale Netze
+
+1. Daten werden eingegeben
+2. Beliebig viele "versteckte" Schichten gewichten immer neu die Ergebnisse der vorhergehenden Knoten
+3. Final gewichtetes Ergebnis wird ausgegeben
+
+Die verborgene Schicht heißt auch <span v-mark.circle.pink>"Black Box"</span>, da Prozesse hier nicht im Einzelnen nachvollziehbar sind.
+
+--- 
