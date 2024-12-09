@@ -57,6 +57,7 @@ Trainingsdatensatz:
 Wir können mit dem bekannten Modell berechenn, wie der wahrscheinliche Mietpreis einer Wohnung mit 75m2 ist. Testen wir das gegen einen Testdatensatz mit verifizierten Daten und können bestätigen, dass die Information korrekt ist oder mit geringer abweichung (=Loss) zum tatsächlichen Wert, können wir die Information zum Modell dazugeben (=Training).
 
 ```mermaid
+graph LR;
 A(Trainingsdaten)-->B(Model)-->C(Vorhersage)-->D(Testdaten)-->A
 ```
 
