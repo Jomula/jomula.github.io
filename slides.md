@@ -1,6 +1,6 @@
 ---
 theme: seriph
-title: Closing the Gap in Non-Latin Script Data
+title: Mittwochsveranstaltung - GWP
 class: text-center
 drawings:
   persist: false
