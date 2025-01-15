@@ -140,29 +140,36 @@ Die Ombudsperson für gute wissenschaftliche Praxis ist auf Grundlage der Leitli
 - ... ist <strong>nicht weisungsgebunden oder berichtspflichtig</strong>, sowie <strong>unparteiisch und neutral</strong>.
 - ... kann keine abschließenden Entscheidungen über das vermutete Fehlverhalten fällen und ist nur "<strong>beratend und/oder in Konfliktfällen vermittelnd</strong>" in Verfahren vermuteten Fehlverhaltens tätig.
 - ... muss <strong>unbefangen</strong> sein. Befangenheit kann durch die Ombudsperson selbst, als auch durch Betroffene geltend gemacht werden.
+- ... kann bei Befangenheit durch eine:n Stellvertreter:in vertreten werden.
+- ... kann sich mit Stellvertreter:innen beraten.
 
 ---
 
 # ... was heißt das?
 
 - Schritt 1: Ein Fehlverhalten wird vermutet.
-- Schritt 2: Urheber:in des Verdachts kontaktiert die Ombudsstelle für gute wissenschaftliche Praxis "in gutem Glauben" (Organisationsverfügung Nr. 3 / 2024, Punkt 3).
-- Schritt 3: Die Ombudsperson bestätigt den Eingang <strong>innerhalb einer Woche ab Eingang der Anzeige</strong> und entscheidet, ob ein begründeter Verdacht vorliegt und beginnt ggf. mit der Vorprüfung.
-- Schritt 4: In der <strong>Vorprüfung</strong> fordert die Ombudsperson fristgerechte, schriftliche Stellungsnahmen der betroffenen Personen an.
+- Schritt 2: Urheber:in des Verdachts kontaktiert die Ombudsstelle für gute wissenschaftliche Praxis "in gutem Glauben" (Organisationsverfügung Nr. 3 / 2024, Punkt 3) über die <strong>Funktionsadresse, schriftlich oder mündlich</strong>. Bei mündlicher Meldung muss die Ombudsperson eine Niederschrift anfertigen.
+- Schritt 3: Die Ombudsperson bestätigt den Eingang <strong>innerhalb einer Woche ab Eingang der Anzeige</strong> und entscheidet, ob ein <strong>hinreichender Verdacht</strong> vorliegt und beginnt ggf. eigenständig und unverzüglich mit der Vorprüfung.
+
+--- 
+
+- Schritt 4: In der <strong>Vorprüfung</strong> fordert die Ombudsperson fristgerechte, schriftliche Stellungsnahmen der betroffenen Personen an unter Aufführung der belastenden Tatsachen und Beweise (unter Wahrung der Vertraulichkeit).
 - Schritt 5: Erhärtet sich der Verdacht, leitet die Ombudsperson die Vorprüfung in eine <strong>förmliche Untersuchung</strong> über, die von der <strong>Ethikkommission</strong> geführt wird.
 - Schritt 6: Die Ombudsperson übermittelt zu Informationszwecken die Entscheidung an die hinweisgebenden und die beschuldigten Personen, sowie an die Direktion der SUB unter Wahrung strengster Vertraulichkeit.
- 
----
-layout: center
----
 
-Stellt die Ombudsperson das Verfahren ein, kann innerhalb von <strong>zwei Wochen ab Zugang</strong> der Entscheidung gegenüber der Direktion der SUB Einspruch erhoben werden.
+ACHTUNG: Stellt die Ombudsperson das Verfahren mangels eines hinreichenden Verdachts ein, kann innerhalb von <strong>zwei Wochen ab Zugang</strong> der Entscheidung gegenüber der Direktion der SUB Einspruch erhoben werden.
+
 
 ---
 layout: center
 ---
 
-# ogwp@sub.uni-hamburg.de
+# Kontakt
+
+Funktionsadresse: <strong>ogwp@sub.uni-hamburg.de</strong>
+
+1. Ombudsperson: Jonas Müller-Laackman
+2. Ombudsperson (Stellvertretung): Ina Kaulen
 
 ---
 layout: center
