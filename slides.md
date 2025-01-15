@@ -159,6 +159,26 @@ Die Ombudsperson für gute wissenschaftliche Praxis ist auf Grundlage der Leitli
 
 ACHTUNG: Stellt die Ombudsperson das Verfahren mangels eines hinreichenden Verdachts ein, kann innerhalb von <strong>zwei Wochen ab Zugang</strong> der Entscheidung gegenüber der Direktion der SUB Einspruch erhoben werden.
 
+---
+layout: center
+---
+
+```mermaid
+
+flowchart TD
+    A["Hinreichender Verdacht (+)"] 
+    style A fill:#ff0000,color:#fff
+    A-->C["Überleitung in eine förmliche Untersuchung"]
+    C-->F["Ethikkomission"]
+    B["Hinreichender Verdacht (-)"]
+    style B fill:#00ff00,color:#000
+    B-->D["Einstellung des Verfahrens"]
+
+
+```
+Die Ombudsperson legt ihre Entscheidung und die ausschlaggebenden Gründe schriftlich in einem
+Vermerk nieder und übermittelt diesen an die hinweisgebende und die beschuldigte Person sowie an
+die Direktion der SUB HH, um diese über die Entscheidung zu informieren.
 
 ---
 layout: center
