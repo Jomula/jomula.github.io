@@ -57,7 +57,7 @@ DH Lab<br />
 # Was gibt es sonst noch? - OCR4all
 
 - Vorteile:
-  - Einfache und kostenlose Web-App, die ab Version 2 modulare Pipelines möglich werden sollen
+  - Einfache und kostenlose Web-App, in der ab Version 2 modulare Pipelines möglich werden sollen
   - OpenSource und frei nutzbar
 - Nachteile:
   - Wir warten immer noch auf Version 2 &colon;-)
@@ -86,14 +86,15 @@ eScriptorium bietet:
 flowchart LR
     A["Import der Bilddaten"]
     A-->B
-    subgraph repeat
+    subgraph ATR-Prozess
         B["Segmentierung"]-->C["Transkription"]
         C-->D["Korrektur"]
         D-->E["Modelltraining/Fine-Tuning"]
-        E-->B
-        D-->B
+        E-->|Segmentierungsmodell|B
+        E-->|Transkriptionsmodell|C
     end
-    D-->F["Export"]
+    D-->|Export der transkribierten Daten|F["Export"]
+    E-->|Export des trainierten Modells|F
 ```
 
 ---
